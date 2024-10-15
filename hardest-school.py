@@ -48,10 +48,10 @@ else:
     if str(difficulty)[-1] == "1":
         difficulty_str = str(difficulty) + "st"
         print(ethnicities[num_race-2], difficulty_str, "hardest school is", tupleList[0][0], "-", tupleList[0][1], "%")
-    if str(difficulty)[-1] == "2":
+    elif str(difficulty)[-1] == "2":
         difficulty_str = str(difficulty) + "nd"
         print(ethnicities[num_race-2], difficulty_str, "hardest school is", tupleList[0][0], "-", tupleList[0][1], "%")
-    if str(difficulty)[-1] == "3":
+    elif str(difficulty)[-1] == "3":
         difficulty_str = str(difficulty) + "rd"
         print(ethnicities[num_race-2], difficulty_str, "hardest school is", tupleList[0][0], "-", tupleList[0][1], "%")
     else:
