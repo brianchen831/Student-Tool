@@ -26,16 +26,16 @@ if num_race == 1:
             tupleList.append((line[1], float(line[5].rstrip("%"))))
     if str(difficulty)[-1] == "1":
         difficulty_str = str(difficulty) + "st"
-        print(genders[num_gender-1], difficulty_str, "hardest school is", tupleList[0][0], "-", tupleList[0][1], "%")
+        print(genders[num_gender-1], difficulty_str, "easiest school is", tupleList[0][0], "-", tupleList[0][1], "%")
     elif str(difficulty)[-1] == "2":
         difficulty_str = str(difficulty) + "nd"
-        print(genders[num_gender-1], difficulty_str, "hardest school is", tupleList[0][0], "-", tupleList[0][1], "%")
+        print(genders[num_gender-1], difficulty_str, "easiest school is", tupleList[0][0], "-", tupleList[0][1], "%")
     elif str(difficulty)[-1] == "3":
         difficulty_str = str(difficulty) + "rd"
         print(genders[num_gender-2], difficulty_str, "easiest school is", tupleList[0][0], "-", tupleList[0][1], "%")
     else:
         difficulty_str = str(difficulty) + "th"
-        print(genders[num_gender-1], difficulty_str, "hardest school is", tupleList[0][0], "-", tupleList[0][1], "%")
+        print(genders[num_gender-1], difficulty_str, "easiest school is", tupleList[0][0], "-", tupleList[0][1], "%")
 else:
     tupleList = []
     tupleList.append(("", 0))
